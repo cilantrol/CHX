@@ -1,0 +1,4 @@
+<%
+session("adminuser") = ""
+response.Redirect("../")
+%>
