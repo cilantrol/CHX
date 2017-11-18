@@ -19,43 +19,43 @@ function form_onsubmit(){
 	var Subject = $("#Subject").val();
 	var Message = $("#Message").val();
 	var VCode = $("#VCode").val();
-	
+
 	if(Company == ""){
 	    alert("Please enter the name of the company!");
 		$("#Company").focus();
 		return false;
 	}
-	
+
 	if(Phone == ""){
 	    alert("Please enter the phone!");
 		$("#Phone").focus();
 		return false;
 	}
-	
+
 	if(Email == ""){
 	    alert("Please enter the email!");
 		$("#Email").focus();
 		return false;
 	}
-	
+
 	if(Subject == ""){
 	    alert("Please enter the Subject!");
 		$("#Subject").focus();
 		return false;
 	}
-	
+
 	if(Message == ""){
 	    alert("Please input message content!");
 		$("#Message").focus();
 		return false;
 	}
-	
+
 	if(VCode == ""){
 	    alert("Please enter the verification code!");
 		$("#VCode").focus();
 		return false;
 	}
-	
+
 	return true;
 }
 // -->
@@ -64,11 +64,11 @@ function form_onsubmit(){
 action = request("action")
 if action = "log" then
     VCode = request.Form("VCode")
-    If VCode <> CStr(Session("validateCode"))  Then 
+    If VCode <> CStr(Session("validateCode"))  Then
         Response.Write"<script>alert(""The verification code is incorrect. Please re-enter it!"");location.href=""ContactUs.asp"";</script>"
         Response.end
     End If
-   
+
     Company = request.Form("Company")
     Phone = request.Form("Phone")
     Email = request.Form("Email")
@@ -87,7 +87,7 @@ if action = "log" then
     rs.update
     rs.close
     set rs = nothing
-   
+
     response.Write("<script>alert('Message success！');javascript:this.location.href='ContactUs.asp';</script>")
     response.End()
 end if
@@ -103,7 +103,7 @@ end if
 
 <div class="positionbg">
     <div id="position" class="wrap">
-        <span class="pagetitle">JINYI</span>
+        <span class="pagetitle">California Heating Company</span>
         <a href="/">Home</a>&nbsp;&gt;&nbsp;<a class="last" href="ContactUs.asp">Contact Us</a>
     </div>
 </div>
@@ -117,7 +117,7 @@ end if
             <div class="item"><a href="ContactUs.asp#feedback">FEEDBACK</a></div>
         </div>
     </div>
-    
+
     <div class="rightside fr" style="width:900px;">
         <div class="description">
             <a name="contact"></a>
@@ -132,7 +132,7 @@ end if
 			rs.close
 			set rs = nothing
 			%>
-            
+
             <div style=" padding:50px 0;">
             <a name="about"></a>
             <h1 style="color:#F00; padding-top:20px;">About Us</h1>
@@ -147,7 +147,7 @@ end if
 			set rs = nothing
 			%>
             </div>
-            
+
             <a name="feedback"></a>
             <h1 style="color:#F00; padding-top:20px;">FEEDBACK</h1>
             <div class="desc_text">
@@ -192,7 +192,7 @@ end if
                 </div>
             </div>
         </div>
-        
+
         <div class="clear"></div>
     </div>
 </div>

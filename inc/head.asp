@@ -1,6 +1,6 @@
 <div id="header">
-	<div class="wrap">	
-		<div class="logo"><a href="/"><img src="/img/logo.png" /></a></div>	   
+	<div class="wrap">
+		<div class="logo"><a href="/"><img src="/img/chx_logo.png" /></a></div>
         <div class="rheader">
 	    	<div class="search fr">
 	        	<div class="ico"></div>
